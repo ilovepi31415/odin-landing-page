@@ -1,23 +1,40 @@
-.header {
+* {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
+.header {
+    background-color: #1F2937;
+    color: #F9FAF8;
 }
 
 .hero {
-
+    background-color: #1F2937;
+    color: #F9FAF8;
+    font-weight: 900;
+    font-size: 48px;
 }
 
 .info {
+    color: #1F2937;
+    font-weight: 900;
+    font-size: 36px;
 
 }
 
 .quote {
-
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 36px;
 }
 
 .call-to-action {
-
+    background-color: #3882F6;
+    color: #F9FAF8;
 }
 
 .footer {
-
+    background-color: #1F2937;
+    color: #F9FAF8;
 }
