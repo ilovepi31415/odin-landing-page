@@ -34,11 +34,18 @@ body > * {
     list-style-type: none;
 }
 
+li > a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .hero {
     gap: 32px;
     background-color: #1F2937;
     color: #F9FAF8;
     align-items: center;
+    padding-top: 32px;
+    padding-bottom: 64px;
 }
 
 .hero > * {
@@ -73,6 +80,7 @@ body > * {
     align-items: center;
     gap: 48px;
     color: #1F2937;
+    padding-bottom: 32px;
 }
 
 .info > .title {
@@ -163,6 +171,8 @@ body > * {
 }
 
 .footer {
+    justify-content: center;
+    align-items: center;
     background-color: #1F2937;
     color: #F9FAF8;
     flex: 0 0;
