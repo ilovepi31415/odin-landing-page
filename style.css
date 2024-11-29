@@ -64,9 +64,46 @@ body > * {
 }
 
 .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
     color: #1F2937;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.info > .title {
     font-weight: 900;
     font-size: 36px;
+}
+
+.info > .cards {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex: 0 1;
+    width: 80%;
+}
+
+.info > .cards > .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.card > img {
+    width: 128px;
+    height: 128px;
+    border: 3px solid #3882F6;
+    border-radius: 16px;
+}
+
+.card > .caption {
+    text-align: center;
 }
 
 .quote {
