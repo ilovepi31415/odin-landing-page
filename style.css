@@ -1,18 +1,24 @@
-* {
+body {
+    display: flex;
+    flex-direction: column;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
+    height: 100vh;
+    justify-content: stretch;
 }
 
 body > * {
+    display: flex;
+    flex: 3 3;
     padding: 16px 128px;
 }
 
 .header {
-    display: flex;
     justify-content: space-between;
     background-color: #1F2937;
     color: #F9FAF8;
     padding-bottom: 0px;
+    flex: 0 0;
 }
 
 .header > .logo {
@@ -28,13 +34,10 @@ body > * {
 }
 
 .hero {
-    display: flex;
     gap: 32px;
     background-color: #1F2937;
     color: #F9FAF8;
     align-items: center;
-    padding-top: 96px;
-    padding-bottom: 96px;
 }
 
 .hero > * {
@@ -64,14 +67,11 @@ body > * {
 }
 
 .info {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 48px;
     color: #1F2937;
-    padding-top: 64px;
-    padding-bottom: 64px;
 }
 
 .info > .title {
@@ -107,25 +107,42 @@ body > * {
 }
 
 .quote {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #E5E7EB;
     color: #1F2937;
+}
+
+.quote > .text {
     font-style: italic;
     font-weight: 100;
     font-size: 36px;
 }
 
-.section {
-    background: #F9FAF8;
+.quote > .reference {
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: 900;
 }
 
-.call-to-action {
+.section {
+    background: #F9FAF8;
+    flex: 2 2;
+}
+
+.section > .call-to-action {
+    display: flex;
     background-color: #3882F6;
     color: #F9FAF8;
 }
 
+
+
 .footer {
     background-color: #1F2937;
     color: #F9FAF8;
+    flex: 0 0;
 }
 
 button {
